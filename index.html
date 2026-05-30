@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리들의 공간 | 디스코드 서버 </title>
+    <style>
+        /* 기본 스타일 리셋 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* 디스코드 감성의 다크 모드 배경 */
+        body {
+            background-color: #2f3136;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 메인 카드 컨테이너 */
+        .server-card {
+            background-color: #36393f;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .server-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 서버 로고/아이콘 공백 (원형) */
+        .server-icon {
+            width: 100px;
+            height: 100px;
+            background-color: #5865F2; /* 디스코드 Blurple 색상 */
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
+        }
+
+        /* 서버 이름 */
+        .server-name {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* 서버 태그/카테고리 */
+        .server-tags {
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #4f545c;
+            color: #b9bbbe;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+            margin: 3px;
+            font-weight: 500;
+        }
+
+        /* 서버 소개글 */
+        .server-description {
+            font-size: 16px;
+            color: #b9bbbe;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            word-break: keep-all;
+        }
+
+        /* 가입 버튼 */
+        .join-btn {
+            display: block;
+            background-color: #5865F2;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 0;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .join-btn:hover {
+            background-color: #4752c4;
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+        }
+
+        /* 하단 카피라이트 */
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #72767d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="server-card">
+        <!-- 서버 아이콘 (이미지가 없다면 첫 글자만 따서 쓰셔도 됩니다) -->
+        <div class="server-icon">💬</div>
+        
+        <!-- 서버 이름 (여기를 변경하세요) -->
+        <h1 class="server-name">우리들의 아지트</h1>
+        
+        <!-- 서버 태그 (원하는 태그로 변경하세요) -->
+        <div class="server-tags">
+            <span class="tag">#친목</span>
+            <span class="tag">#게임</span>
+            <span class="tag">#종합게임</span>
+            <span class="tag">#24인상시 대기</span>
+        </div>
+        
+        <!-- 서버 소개글 (여기를 변경하세요) -->
+        <p class="server-description">
+            혼자 게임하기 심심하셨나요? 매일 밤 즐겁게 소통하고 함께 게임할 멤버들을 찾고 있습니다. 매너 좋고 유쾌한 분들이라면 누구나 환영합니다. 지금 들어오셔서 함께 해요!
+        </p>
+        
+        <!-- 디스코드 초대 링크 (무제한 초대 링크를 아래 href="여기에" 넣으세요) -->
+        <a href="https://discord.gg/YOUR-LINK" class="join-btn" target="_blank">서버 입장하기</a>
+        
+        <div class="footer">
+            &copy; 2026 우리들의 아지트. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
